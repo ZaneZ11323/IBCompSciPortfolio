@@ -1,7 +1,8 @@
 package Project2.ElementaryLogicGates.Tests;
 
 import Project2.ElementaryLogicGates.Nand;
-import org.testng.annotations.Test;
+import org.junit.jupiter.api.Test;
+
 
 import static org.junit.Assert.*;
 
