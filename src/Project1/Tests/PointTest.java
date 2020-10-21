@@ -94,3 +94,101 @@ public class PointTest {
     }
 
 }
+//My Work
+import org.junit.Test;
+
+        import java.awt.*;
+
+        import static org.junit.Assert.*;
+
+public class PointTest {
+
+    @Test
+    public void distanceFromOrigin() {
+        Point testPoint = new Point(7, 24);
+        double actualdistience = testPoint.distanceFromOrigin();
+        double expectedDistance = 25;
+        assertEquals(expectedDistance, actualdistience, 0.001);
+    }
+
+    @Test
+    public void distanceFromOrigin1() {
+        Point testPoint = new Point(7, 24);
+        double actualDistance = testPoint.distanceFromOrigin();
+        double expectedDistance = 25;
+        assertEquals(expectedDistance, actualDistance, 0.001);
+    }
+
+    @Test
+    public void distanceFromOrigin2() {
+        Point testPoint = new Point(-6, -10);
+        double actualDistance = testPoint.distanceFromOrigin();
+        double expectedDistance = 11.6619;
+        assertEquals(expectedDistance, actualDistance, 0.001);
+    }
+
+    @Test
+    public void distanceFromOrigin3() {
+        Point testPoint = new Point(0, 0);
+        double actualDistance = testPoint.distanceFromOrigin();
+        double expectedDistance = 0;
+        assertEquals(expectedDistance, actualDistance, 0.001);
+    }
+
+    @Test
+    public void getQuadrantTest1() {
+        Point testPoint = new Point(1, 5);
+        String actualQuadrant = testPoint.getQuadrant();
+        String expectQuadrant = "1";
+
+        assertEquals(expectQuadrant, actualQuadrant);
+    }
+
+    @Test
+    public void getQuadrantTest2() {
+        Point testPoint = new Point(-1, 3.21);
+        String actualQuadrant = testPoint.getQuadrant();
+        String expectQuadrant = "2";
+
+        assertEquals(expectQuadrant, actualQuadrant);
+    }
+
+    @Test
+    public void getQuadrantTest3() {
+        Point testPoint = new Point(-4, -5);
+        String actualQuadrant = testPoint.getQuadrant();
+        String expectQuadrant = "1";
+
+        assertEquals(expectQuadrant, actualQuadrant);
+    }
+
+    @Test
+    public void getQuadrantTest4() {
+        Point testPoint = new Point(4, -5);
+        String actualQuadrant = testPoint.getQuadrant();
+        String expectQuadrant = "4";
+
+        assertEquals(expectQuadrant, actualQuadrant);
+    }
+
+    @Test
+    public void getQuadrantTestAxis1() {
+        Point testPoint = new Point(0, -5);
+        String actualQuadrant = testPoint.getQuadrant();
+        String expectQuadrant = "Axes";
+
+        assertEquals(expectQuadrant, actualQuadrant);
+
+    }
+
+    @Test
+    public void getQuadrantTestAxis2() {
+        Point testPoint = new Point(0, 0);
+        String actualQuadrant = testPoint.getQuadrant();
+        String expectQuadrant = "Axes";
+
+        assertEquals(expectQuadrant, actualQuadrant);
+
+    }
+
+}
