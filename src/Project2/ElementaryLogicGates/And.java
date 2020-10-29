@@ -12,6 +12,7 @@ public class And {
     }
 
     public void compute(boolean a, boolean b){
+        //coded with the class
         nand1.compute(a,b);
         not1.compute(nand1.out);
         out = not1.out;
