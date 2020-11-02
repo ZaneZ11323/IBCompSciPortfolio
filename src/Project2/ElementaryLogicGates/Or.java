@@ -8,15 +8,15 @@ public class Or {
     private Nand nand3;
 
     public Or() {
-        nand1 = new And;
-        nand2= new And;
-        nand3 = new And;
+        nand1 = new Nand();
+        nand2 = new Nand();
+        nand3 = new Nand();
 
     }
 
     public void compute(boolean a, boolean b){
-    nand1.compute(a);
-    nand2.compute(b);
+    nand1.compute(a,a);
+    nand2.compute(b,b);
     nand3.compute(nand1.out, nand2.out);
     out = nand3.out;
     }
