@@ -15,9 +15,9 @@ public class Mux {
 
     public void compute(boolean a, boolean b, boolean sel){
     not1.compute(sel);
-    and1.compute(a,sel);
-    and2.compute(b, not1.out );
+    and1.compute(a, not1.out);
+    and2.compute(b,sel );
     or1.compute(and1.out, and2.out);
-    or1.out=out;
+    out=or1.out;
     }
 }
