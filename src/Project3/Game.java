@@ -45,7 +45,7 @@ public class Game extends JPanel {
                 if (win) {
                     for (int i = 0; i < 9; i++) {
                         buttons[i].setText("CONGRATS");
-                        butt
+
 
                     }
                     System.out.println("CONGRATS");
