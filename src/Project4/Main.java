@@ -8,7 +8,7 @@ public class Main {
 
         File myFile = new File("/Users/ZZTOP/Desktop/COMSIPRJ4/demo.csv");
         Parser parser = new Parser(myFile);
-        parser.finaAvrage();
+        parser.findAvrage();
 
         Writer writer = new Writer("/Users/ZZTOP/Desktop/COMSIPRJ4/output.csv");
         writer.writeData("Big Z's File");

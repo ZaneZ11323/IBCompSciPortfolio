@@ -26,13 +26,13 @@ public class Parser<sum> {
 
 
 
-    public double finaAvrage() {
+    public double findAvrage() {
         double sum = 0;
 
         while (scanner.hasNext()) {
             int i = 0;
             i++;
-            Double sum = Double.valueOf(scanner.next());
+         sum = Double.valueOf(scanner.next());
 
             System.out.println(sum / i);
 
