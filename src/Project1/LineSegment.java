@@ -1,4 +1,4 @@
-package Project1.Code;
+package Project1;
 
 public class LineSegment {
 

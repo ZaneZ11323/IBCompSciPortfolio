@@ -1,6 +1,10 @@
 package Project1.Tests;
 
+import Project1.Point;
 import org.junit.Test;
+import Project1.LineSegment;
+
+import static org.junit.Assert.assertArrayEquals;
 
 public class LineSegmentTest {
 
