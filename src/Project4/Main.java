@@ -8,9 +8,9 @@ public class Main {
 
         File myFile = new File("/Users/ZZTOP/Desktop/COMSIPRJ4/demo.csv");
         Parser parser = new Parser(myFile);
-        parser.findAvrage();
+        Double[] sortedArray = parser.sortAscending();
 
         Writer writer = new Writer("/Users/ZZTOP/Desktop/COMSIPRJ4/output.csv");
-        writer.writeData("Big Z's File");
+        writer.writeArrayData(sortedArray);
     }
 }
