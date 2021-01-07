@@ -1,7 +1,4 @@
 package Project3;
-
-
-
 import javax.swing.*;
 
 public class Main {

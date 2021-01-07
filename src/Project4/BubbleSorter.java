@@ -4,29 +4,22 @@ import javax.swing.text.Element;
 
 public class BubbleSorter implements Sorter{
 
-    private Object Element;
-
     @Override
     public Double[] sort(Double[] values) {
-       Element = [50,40,30,20,10]
-        for (int i = 0; 0 < 8-2; i++) {
-            for (int j = 0; j < 8-Integer; j++) {
-                
-            }
-        }
-            
-                
-            }
-                
-            }
-            
-        }
 
+        Double[] sortedValues = values;
+
+        for (int i = 0; i < values.length-1; i++) {
+            for (int j = 0; j < values.length-1-i; j++) {
+                if (sortedValues[j]>sortedValues[j+1]){
+                    double temp = sortedValues[j];
+                    sortedValues[j]=sortedValues[j+1];
+                    sortedValues[j+1]=temp;
+                }
+            }
 
     }
-
-
-        return new Double[0];
+        return sortedValues;
 
     }
 }
